@@ -27,7 +27,7 @@ if(isset($_POST['email'])){
 }
 
 $queryRoles = mysqli_query($config, "SELECT * FROM roles 
-WHERE name IN ('Instructors','Students')
+WHERE name IN ('Instructors','Students', 'Admin')
 ORDER BY id DESC");
 $rowRoles   = mysqli_fetch_all($queryRoles, MYSQLI_ASSOC);
 ?>
